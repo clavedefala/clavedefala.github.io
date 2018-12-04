@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clave de Fala</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran|Montserrat+Alternates:700" rel="stylesheet">
+  <link rel="stylesheet" href="bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+  });
+</script>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.clavedefala.eu">
+        <img src="images/logo-icon.svg" width="28" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#voz">
+          <span class="icon">
+            <i class="fas fa-info-circle"></i>
+          </span>
+          <span class="montserrat">Uma nova Voz</span>
+        </a>
+
+        <a class="navbar-item" href="#app">
+          <span class="icon">
+            <i class="fas fa-mobile-alt"></i>
+          </span>
+          <span class="montserrat">Aplicação</span>
+        </a>
+
+        <a class="navbar-item" href="#foss">
+          <span class="icon">
+            <i class="fab fa-osi"></i>
+          </span>
+          <span class="montserrat"><i>Free and Open-Source</i></span>
+        </a>
+
+        <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="montserrat">Contacto</span>
+        </a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="hero is-link is-fullheight ">
+    <div class="hero-body">
+      <img src="images/logo-text.svg" alt="Clave de Fala Logo">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="voz">
+    <!-- Title -->
+    <div class="section-heading">
+      <h3 class="title is-2 montserrat">Uma nova voz.</h3>
+      <h4 class="subtitle is-5">Por uma melhor vida aos Limitados da Voz.</h4>
+      <div class="container">
+        <p class="has-text-centered">
+          A <strong class="montserrat">Clave de Fala</strong> começou com um grupo de estudantes de Engenharia
+          Informática, na Universidade de Coimbra, que pretendia ajudar as
+          pessoas com <strong>limitações de voz</strong> através de uma app inovadora.
+          Estas pessoas, como não têm capacidade de conversar eficazmente com desconhecidos em situações do dia-a-dia,
+          vêem-se <strong>excluídos da sociedade</strong>.
+          É aqui que entra a nossa aplicação, que dará <strong>uma nova voz a quem mais precisa</strong>!
+        </p>
+      </div>
+    </div>
+
+    <div class="columns has-same-height is-desktop">
+
+      <div class="column">
+        <!-- Profile picture -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="images/autores.jpg" alt="Placeholder image" style="">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <!-- Profile -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-4 montserrat">A equipa da Clave de Fala</h3>
+
+            <div class="content">
+              <table class="table-profile">
+                <tr>
+                  <th colspan="1"></th>
+                  <th colspan="2"></th>
+                </tr>
+                <tr>
+                  <td>Membros:</td>
+                  <td>Pedro Silva, Cláudio Gomes, André Correia, António Eloi, Telma Portugal, Joana Lameiras</td>
+                </tr>
+                <tr>
+                  <td>Origem:</td>
+                  <td>Departamento de Engenharia Informática da Faculdade de Ciências e Tecnologias da Universidade de
+                    Coimbra</td>
+                </tr>
+                <tr>
+                  <td>Cidade:</td>
+                  <td>Coimbra, Portugal</td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td><a href="mailto:contacto@clavedefala.eu">contacto@clavedefala.eu</a></td>
+                </tr>
+              </table>
+            </div>
+            <br>
+            <div class="buttons is-grouped is-centered">
+              <a href="https://github.com/clavedefala" class="button is-link">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>
+                  GitHub
+                </span>
+              </a>
+              <a href="https://www.facebook.com/clavedefala" class="button is-link">
+                <span class="icon">
+                  <i class="fab fa-facebook"></i>
+                </span>
+                <span>
+                  Facebook
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>>
+
+  <!-- About -->
+  <section class="section" id="app">
+    <!-- Title -->
+    <div class="section-heading">
+      <h3 class="title is-2 montserrat">Aplicação</h3>
+      <h4 class="subtitle is-5">Está disponível na Play Store!</h4>
+      <div class="container">
+        <p class="has-text-centered">
+          A nossa aplicação móvel <strong>destina-se aos Limitados da Voz</strong>. Com um menu intuitivo e fácil que
+          gera frases rápidas de acordo com as necessidades do utilizador Limitado de Voz, procura proporcionar uma
+          <strong>comunicação eficaz</strong>. O utilizador pode editar a frase escolhida e até mesmo recorrer à
+          tecnologia <strong>Text-To-Speech</strong> para torná-la audível.
+          A aplicação possui uma backend que procura sugerir a melhor frase possível a qualquer momento.
+        </p>
+      </div>
+      <br>
+      <a href='https://play.google.com/store/apps/details?id=eu.clavedefala.clavedefalaapp&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+          alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt_badge_web_generic.png' /></a>
+    </div>
+
+    <div class="columns has-same-height is-desktop">
+
+      <div class="column">
+        <!-- Profile picture -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="images/autores.jpg" alt="Placeholder image" style="">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <!-- Profile -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-4 montserrat">A equipa da Clave de Fala</h3>
+
+            <div class="content">
+              <table class="table-profile">
+                <tr>
+                  <th colspan="1"></th>
+                  <th colspan="2"></th>
+                </tr>
+                <tr>
+                  <td>Membros:</td>
+                  <td>Pedro Silva, Cláudio Gomes, André Correia, António Eloi, Telma Portugal, Joana Lameiras</td>
+                </tr>
+                <tr>
+                  <td>Origem:</td>
+                  <td>Departamento de Engenharia Informática da Faculdade de Ciências e Tecnologias da Universidade de
+                    Coimbra</td>
+                </tr>
+                <tr>
+                  <td>Cidade:</td>
+                  <td>Coimbra, Portugal</td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td><a href="mailto:contacto@clavedefala.eu">contacto@clavedefala.eu</a></td>
+                </tr>
+              </table>
+            </div>
+            <br>
+            <div class="buttons is-grouped is-centered">
+              <a href="https://github.com/clavedefala" class="button is-link">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>
+                  GitHub
+                </span>
+              </a>
+              <a href="https://www.facebook.com/clavedefala" class="button is-link">
+                <span class="icon">
+                  <i class="fab fa-facebook"></i>
+                </span>
+                <span>
+                  Facebook
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>>
+
+  <!-- FOSS -->
+  <section class="section" id="foss">
+    <div class="section-heading">
+      <h3 class="title is-2"><i>Free and Open-Source</i></h3>
+      <h4 class="subtitle is-5">Acreditamos nos princípios do Código Livre e Aberto.</h4>
+    </div>
+    <div class="container">
+      <p class="has-text-centered">
+        Seguimos a filosofia de que o nosso código deve ser <strong>livre e aberto</strong> ao público. Aceitamos e
+        agradecemos qualquer
+        contribuição positiva para a <strong class="montserrat">Clave de Fala</strong>!
+      </p>
+      <p class="has-text-centered">
+        <strong>Independentemente das suas capacidades, qualquer pessoa pode melhorar a nossa aplicação de várias
+          formas.</strong>
+      </p>
+    </div>
+    <br>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Frases</h4>
+              Nós aceitamos sugestões de frases, que podem ser enviadas por email para serem adicionadas à aplicação.
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Código</h4>
+              A nossa aplicação está aberta a melhorias! No repositório do GitHub, pode procurar como contribuir nas
+              <strong><i>Issues</i></strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Divulgação</h4>
+              Ao divulgar o nosso projeto, está a ajudar a <strong class="montserrat">Clave de Fala</strong> a chegar a
+              quem mais precisa!
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Sugestões</h4>
+              Se tem uma ideia para o nosso projeto mas não é capaz de a pôr em prática, pode nos enviar a sugestão por
+              email!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Contacto</h3>
+        <h4 class="subtitle is-5">Quer falar connosco? Estamos disponíveis!</h4>
+      </div>
+      <br>
+
+      <form action="mailto:contacto@clavedefala.eu" method="post" enctype="text/plain">
+        <div class="columns">
+          <div class="column is-6 is-offset-3">
+            <div class="box">
+              <div class="field">
+                <label class="label">Nome</label>
+                <div class="control">
+                  <input class="input" type="text" name="name" placeholder="O seu nome">
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="email" placeholder="O seu email" value="">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Mensagem</label>
+                <div class="control">
+                  <textarea class="textarea" type="text" name="message" placeholder="A sua mensagem"></textarea>
+                </div>
+              </div>
+
+              <div class="field is-grouped has-text-centered">
+                <div class="control">
+                  <button type="submit" value="Submit" class="button is-link is-large">
+                    <span class="icon">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>Enviar</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer has-background-link">
+    <div class="content has-text-centered">
+      <a href="https://bulma.io">
+        <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="256" height="48">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
